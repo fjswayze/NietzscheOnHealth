@@ -2,7 +2,7 @@
 
 **Background and Overview** 
 
-   This website will present Fredrich Nietzsche's (very funny) views on nutrition, climate, and exercise from his book Ecco Homo in a visually compelling way. The site is primarily designed to be a CSS showcase. 
+   This website will present Fredrich Nietzsche's (very funny) views on nutrition, climate, and exercise from his book *Ecco Homo* in a visually compelling way. The site is primarily designed to be a CSS showcase. 
    
 **Functionality and MVPs** 
 
