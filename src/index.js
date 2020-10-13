@@ -1,5 +1,4 @@
-
-
+import _ from 'lodash'; 
 
 function handleWalk(){
     document.getElementsByClassName('walk').addEventListner('click', function(){

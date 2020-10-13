@@ -41,9 +41,7 @@
         <div class="overlay">
             <div class="text">
                 <p>
-                    When Fredrich Nietzsche wrote Ecco Homo he was friendless, broke, unknown, and in horrible
-                    health, dealing with migranes that left him bedridden for days. However, the book is relentlessly optimistic, with 
-                    chapter titles such as 'Why I am So Great' and 'Why I am so Clever.' He also gives reccomendations for how to eat, drink, and exercise. 
+                    Health advice from Nietzsche's Ecco Homo.  
                 </p>
             
             </div>
@@ -184,6 +182,27 @@
 
     </div>
 
-    <script  src="src/index.js"></script>
+    <script type="text/javascript">
+
+
+        function handleWalk() {
+            document.getElementsByClassName('walk').addEventListner('click', function () {
+                document.getElementsByClassName('paragraph-1').style.color = 'black'
+            })
+        }
+
+        function handleSit() {
+            document.getElementsByClassName('sit').addEventListner('click', function () {
+                document.getElementsByClassName('paragraph-2').style.color = 'black'
+            })
+        }
+
+        function handleClimate() {
+            document.getElementsByClassName('climate').addEventListner('click', function () {
+                document.getElementsByClassName('paragraph-3').style.color = 'black'
+            })
+        }
+    
+    </script>
 </body>
 </html>
