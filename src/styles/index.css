@@ -8,6 +8,10 @@ body{
 }
 
 /* SPLASH CSS */
+
+audio {
+    display: none;
+}
 .splash{
     height: 100%;
     display: block;
@@ -23,6 +27,55 @@ body{
     height: 30px;
     padding: 5px;
 }
+
+.wagner-logo{
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px; 
+    background-color: black;
+    color: white; 
+    text-align: center;
+    padding: 5px 0; 
+    border-radius: 6px;
+    position: absolute; 
+    z-index: 1;
+    top: 70px; 
+    right: 10px; 
+}
+
+.nietzsche-tiptext {
+    visibility: hidden;
+    width: 120px; 
+    background-color: black;
+    color: white; 
+    text-align: center;
+    padding: 5px 0; 
+    border-radius: 6px;
+    position: absolute; 
+    z-index: 1;
+    top: 70px; 
+    right: 30px; 
+}
+
+.nietzsche-logo:hover + .nietzsche-tiptext{
+    visibility: visible;
+}
+
+.wagner-logo:hover + .tooltiptext {
+    visibility: visible;
+}
+
 
 .nav-bar{
     display: flex;
@@ -47,23 +100,45 @@ body{
     align-items: center;
 }
 
-.site-links a {
-    padding: 10px;
+.site-links a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     cursor: pointer;
     text-decoration: none;
     color: black;
+    background-color: #b5b5b51a;
+    margin: 3px;
+    transition: all 0.5s;
+    border-radius: 5px;
 }
+
+.site-links a:hover {
+    box-shadow: 2px 2px gray; 
+    background-color: #07213a; 
+    color: white;
+    transition: .5s;
+}
+
+
+
+
 
 .personal-links a {
     text-decoration: none;
+    
+    
 }
+
+
 
 .container {
   position: absolute;
   top: 90px; 
   bottom: 0px;
   overflow-y: scroll;
-  height: 700px;
+  height: 820px;
 }
 
 .image {
@@ -111,12 +186,14 @@ body{
 
 
 /* FOOD CSS */
-
+.take-up-space{
+    height: 820px;
+    width: 100%;
+}
 
  .food{
-    position: absolute;
-    top: 800px; 
-    height: 800px;
+    position: relative;
+    height: auto;
     z-index: 1;
 } 
 
@@ -135,23 +212,25 @@ body{
     padding-left: 20px;
 }
 
-.slideshow-container{
-   
-    height: 80%;
+.flip-card-container{
+    padding-left: 20px;
+    top: 12%; 
+    height: 85%; 
    position: absolute;
-    bottom: 6%;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 
-.slideshow-container-2{
-  
-    height: 80%;
-    position: absolute;
-    bottom: 6%;
-    left: 78%;
+.flip-card-container-2{
+    padding-right: 20px;
+    top: 12%; 
+    height: 85%; 
+    position: absolute; 
+    
+    right: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -164,8 +243,6 @@ body{
     height: 200px;
     width: 200px;
     perspective: 1000px;
-    
-    margin: 40px;
     border: 1px solid white;
     border-radius: 2px;
     padding: 10px;
@@ -212,10 +289,10 @@ body{
 
 /* CLIMATE */
 
+
 .climate-exercise{
     width: 100%;
-    position: absolute;
-    top: 1700px; 
+    position: relative;
     z-index: 2;
 }
 
@@ -231,15 +308,17 @@ body{
 
 
 .climate-quotes p {
-    color: red;
+    color: transparent;
+    transition: 1s;
+    font-size: 20px;
 }
 
 .dropdown-container{
   
-   position: absolute;
-   right: 40%;
-    top: 15%;
-   
+    position: absolute; 
+    right: 45%;
+    top: 10%; 
+
     height: 200px;
     width: 200px;
     display: flex;
@@ -263,9 +342,9 @@ background-color: #ffffff6e;
 
 .climate-quotes {
     position: absolute; 
-    top: 20%; 
-    right: 20%;
-    width: 20%;
+    top: 10%;
+    right: 7%;
+    width: 30%;
     height: 70%;
 }
 
@@ -279,7 +358,7 @@ background-color: #ffffff6e;
 
 .dropdown:hover {
     width: 160px;
-    height: 500px;
+    height: 400px;
 }
 
 .dropdown:hover p {
@@ -293,22 +372,85 @@ background-color: #ffffff6e;
 
 /* DRINKS */
 
-.Drinks{
-    position: absolute;
-    top: 2500px; 
-}
+
 
 .Drinks h1{
     padding-left: 20px;
 }
 
+.slideshow-container{
+    position: relative;
+}
+
 .quote-plus-pic{
-    display: flex;
+    display: none;
     width: 100%;
     height: 500px;
     overflow: hidden;
-    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    /* background-color: beige; */
 
+}
+
+.prev, .next {
+    cursor: pointer;
+  position: absolute;
+  top: 5%;
+  width: auto;
+  margin-top: -22px;
+  padding: 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dots-container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 .quote-plus-pic:first-of-type{

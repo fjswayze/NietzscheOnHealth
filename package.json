@@ -17,6 +17,7 @@
   "author": "mrcjbradley",
   "license": "ISC",
   "dependencies": {
+    "howler": "^2.2.0",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
