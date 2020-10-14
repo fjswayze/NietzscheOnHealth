@@ -38,6 +38,7 @@ audio {
 .tooltip {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .tooltiptext {
@@ -478,5 +479,19 @@ background-color: #ffffff6e;
     transition: .5s; 
 }
 
+/* ANIMATION */
+
+.myCanvas{
+    visibility: hidden;
+    position: absolute;
+    top: 30px; 
+    transition: 2s;
+}
+
+
+.valkyrie{
+    height: 0px;
+    width: 0px;
+}
 
 

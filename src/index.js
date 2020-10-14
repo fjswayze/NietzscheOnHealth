@@ -95,8 +95,95 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     }
 
+    //game
 
-  
+    console.log('game.js')
+    var canvas = document.getElementById('myCanvas')
+    var ctx = canvas.getContext('2d')
+
+    var x = canvas.width / 2;
+    var y = canvas.height - 100;
+
+ 
+
+    var x2 = canvas.width / 4;
+    var y2 = canvas.height - 250;
+   
+
+    var x3 = canvas.width - 5; 
+    var y3 = 100; 
+   
+
+
+    var dx = -2;
+    var dy = -2;
+    var dy2 = -2; 
+    var dy3 = -2; 
+    
+    var valkyrie = document.getElementById('valkyrie'); 
+   
+    console.log(valkyrie.style.height)
+    function drawValk1() {
+        ctx.beginPath();
+        ctx.drawImage(valkyrie, x, y, 150, 150)
+        ctx.closePath();
+    }
+
+    function drawValk2() {
+        ctx.beginPath();
+        ctx.drawImage(valkyrie, x2, y2, 150, 150)
+        ctx.closePath();
+    }
+
+    function drawValk3() {
+        ctx.beginPath();
+        ctx.drawImage(valkyrie, x3, y3, 150, 150)
+        ctx.closePath();
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawValk1();
+        drawValk2();
+        drawValk3(); 
+        if (x + dx < 0 || x + dx < 0) {
+            x = canvas.width;
+        }
+        if (x2 + dx < 0 || x2 + dx < 0) {
+            x2 = canvas.width;
+        }
+
+        if (x3 + dx < 0 || x3 + dx < 0) {
+            x3 = canvas.width;
+        }
+
+        if (y + dy > canvas.height  || y + dy < 0){
+            dy = -dy; 
+        }
+
+        if (y2 + dy2 > canvas.height - 150|| y2 + dy2 < 100) {
+            dy2 = -dy2;
+        }
+
+        if (y3 + dy3 > canvas.height -150 || y3 + dy3 < 50) {
+            dy3 = -dy3;
+        }
+
+        
+
+        
+
+        x += dx;
+        y += dy;
+        y2 += dy2; 
+        y3 += dy3;  
+
+        x2 += dx;
+        x3 += dx; 
+        
+
+    }
+    setInterval(draw, 10); 
     
 });
 

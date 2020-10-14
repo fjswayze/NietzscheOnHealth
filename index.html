@@ -28,6 +28,13 @@
         } else{
             sound.pause(); 
         }
+    var animation = document.getElementById('myCanvas');
+    if(animation.style.visibility === 'visible'){
+        animation.style.visibility = 'hidden'
+    } else {
+         animation.style.visibility = 'visible';
+    }
+   
         
     }
 </script>
@@ -50,7 +57,7 @@
             <img class="nietzsche-logo" src="./src//images//nietzsche-logo.png">
             <span class="nietzsche-tiptext">About Nietzsche</span>
         </a>
-        <a class="tool-tip">
+        <a class="tool-tip" >
             
             <img id='wagner-logo' onclick="playSound();" class="wagner-logo" src='./src/images/wagner.png'>
             <span class="tooltiptext">Wagner Mode</span>
@@ -217,6 +224,11 @@
         </div>
 
     </div>
+    <img id='valkyrie' class='valkyrie' src='./src/images/valkarie.png'>
+   
+        <canvas id="myCanvas" class='myCanvas' width="1800" height="820px"></canvas>
+   
+
     <script src='dist/main.js'></script>
 
 </body>
