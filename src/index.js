@@ -95,9 +95,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     }
 
-    //game
+    //Animation
 
-    console.log('game.js')
     var canvas = document.getElementById('myCanvas')
     var ctx = canvas.getContext('2d')
 
@@ -157,7 +156,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             x3 = canvas.width;
         }
 
-        if (y + dy > canvas.height  || y + dy < 0){
+        if (y + dy > canvas.height -50 || y + dy < 0){
             dy = -dy; 
         }
 

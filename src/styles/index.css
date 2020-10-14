@@ -38,7 +38,6 @@ audio {
 .tooltip {
     position: relative;
     display: inline-block;
-    cursor: pointer;
 }
 
 .tooltiptext {
@@ -349,6 +348,13 @@ background-color: #ffffff6e;
     height: 70%;
 }
 
+.dropdown a {
+    color: black;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .dropdown p {
     color: transparent;
     transition: 2s;
@@ -366,6 +372,7 @@ background-color: #ffffff6e;
     color: black;
    
 }
+
 
 .dropdown p:hover{
  border-bottom: 1px black solid;
@@ -485,7 +492,7 @@ background-color: #ffffff6e;
     visibility: hidden;
     position: absolute;
     top: 30px; 
-    transition: 2s;
+    
 }
 
 
