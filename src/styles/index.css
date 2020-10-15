@@ -197,6 +197,26 @@ audio {
     z-index: 1;
 } 
 
+.food-title {
+    animation-duration: 10s;
+    animation-name: colorshift;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorshift {
+    from {
+        color: black;
+    }
+
+    to {
+        color: white;
+    }
+}
+
+
+
 .food-background{
     width: 100%;
     height: 100%;
@@ -296,9 +316,32 @@ audio {
     z-index: 2;
 }
 
+.climate-title-container {
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
 .climate-exercise h1{
     padding-left: 20px;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
 }
+
+@keyframes slidein {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 70%;
+    }
+}
+
+
 .climate-exercise img{
     width: 100%;
     height: 700px;
@@ -384,6 +427,10 @@ background-color: #ffffff6e;
 
 .Drinks h1{
     padding-left: 20px;
+}
+
+.drinks-title-container{
+    height: 80px;
 }
 
 .slideshow-container{
