@@ -644,11 +644,12 @@ background-color: #ffffff6e;
     color: black;
     height: 46%;
     width: 46%;
-    border: 1px solid black; 
+    border: 1px solid gray; 
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 
 }
 

@@ -8,7 +8,6 @@ import _, { over } from 'lodash';
 
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
 
     document.getElementById('walk').addEventListener('mouseover', function () {
         document.getElementById('paragraph-1').style.color = 'black'; 
@@ -40,7 +39,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     let slideIndex = 1; 
     showSlides(slideIndex); 
-    console.log(slideIndex); 
 
    
 
@@ -88,9 +86,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         for(i = 0; i < dots.length; i++){
             dots[i].className = dots[i].className.replace(' active', '')
         }
-        console.log(slides[slideIndex -1].style.display); 
         slides[slideIndex - 1].style.display = 'flex';
-        console.log(slides[slideIndex - 1].style.display); 
         dots[slideIndex -1].className += ' active'; 
 
     }
@@ -156,7 +152,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
     var valkyrie = document.getElementById('valkyrie'); 
    
-    console.log(valkyrie.style.height)
     function drawValk1() {
         ctx.beginPath();
         ctx.drawImage(valkyrie, x, y, 150, 150)
@@ -266,6 +261,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
         plusQuestion(1);
         overMan +=1; 
     })
+    document.getElementById('Q1D').addEventListener('click', function(){
+        plusQuestion(1); 
+        regularMan += 1;
+    })
 
 
     document.getElementById('Q2A').addEventListener('click', function () {
@@ -279,6 +278,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('Q2C').addEventListener('click', function () {
         plusQuestion(1);
         lastMan += 1; 
+    })
+    document.getElementById('Q2D').addEventListener('click', function () {
+        plusQuestion(1);
+        regularMan += 1;
     })
 
 
@@ -295,6 +298,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
         plusQuestion(1);
         lastMan += 1; 
     })
+    document.getElementById('Q3D').addEventListener('click', function () {
+        plusQuestion(1);
+        regularMan += 1;
+    })
 
 
     document.getElementById('Q4A').addEventListener('click', function () {
@@ -309,21 +316,31 @@ window.addEventListener('DOMContentLoaded', (event) => {
         plusQuestion(1);
         regularMan += 1; 
     })
+    document.getElementById('Q4D').addEventListener('click', function () {
+        plusQuestion(1);
+        regularMan += 1;
+    })
 
 
     document.getElementById('Q5A').addEventListener('click', function () {
-        tabulateResult(); 
         lastMan += 1; 
+        tabulateResult(); 
         plusQuestion(1);
     })
     document.getElementById('Q5B').addEventListener('click', function () {
-        tabulateResult(); 
         regularMan += 1; 
+
+        tabulateResult(); 
         plusQuestion(1);
     })
     document.getElementById('Q5C').addEventListener('click', function () {
-        tabulateResult(); 
         overMan += 1; 
+        tabulateResult(); 
+        plusQuestion(1);
+    })
+    document.getElementById('Q5D').addEventListener('click', function () {
+        regularMan += 1;
+        tabulateResult(); 
         plusQuestion(1);
     })
 
