@@ -198,7 +198,7 @@ audio {
 } 
 
 .food-title {
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-name: colorshift;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -211,7 +211,7 @@ audio {
     }
 
     to {
-        color: white;
+        color: #f5f2f2;
     }
 }
 
@@ -546,6 +546,120 @@ background-color: #ffffff6e;
 .valkyrie{
     height: 0px;
     width: 0px;
+}
+
+
+/* QUIZ */
+
+
+.questions  {
+    background-image: url('../images/quiz-background.jpg');
+    height: 600px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+   
+}
+
+.prompt {
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 200px;
+}
+
+.questions image {
+    height: 100%;
+}
+.questions p {
+    margin-bottom: 100px;
+}
+
+.quiz-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 600px;
+    width: 80%;
+    margin-left:10% ;
+    margin-bottom: 100px;
+}
+
+.quiz-div button {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+
+.quiz-div button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px black;
+}
+
+#result {
+    color: black;
+     padding: 30px; 
+     margin-top: 30px;
+     margin-bottom: 30px;
+   
+    background-color: #ffffff96; 
+    border-radius: 3px;
+    width: 100%;
+}
+
+
+
+
+
+#answer-div{
+    visibility: visible;
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.answer-div button {
+    margin: 10px;
+}
+
+
+.answer-div{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.component-div{
+    color: black;
+    height: 46%;
+    width: 46%;
+    border: 1px solid black; 
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.component-div:hover {
+    background-color: rgb(2, 26, 53);
+    color: white;
+    cursor: pointer;
+}
+
+.answer-div button{
+   color: black; 
 }
 
 
