@@ -360,7 +360,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
  
     if(lastMan > regularMan && lastMan > overMan){
         document.getElementById('results-div').style.backgroundImage = 'url(https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80)'
-        tabulatedResult = ' You are the Last Man, Nietzsches greatest fear for humanity\'s future. However, knowing Nietzsche, that\'s probably not such a bad thing.'
+        tabulatedResult = ' You are the Last Man, Nietzsche\'s greatest fear for humanity\'s future. However, knowing Nietzsche, that\'s probably not such a bad thing.'
     } 
     if(overMan > regularMan && overMan > lastMan){
         document.getElementById('results-div').style.backgroundImage = 'url(https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2224&q=80)'
