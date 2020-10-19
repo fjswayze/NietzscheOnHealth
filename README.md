@@ -11,13 +11,13 @@ In Health With Nietzsche, users can learn about the great 19th Century Philosoph
 In addition, this project will include the following features: 
 
 - Splash Page: 
-        Image Animation: High Resolution photo with a menu of links to the Food and Drink, Climate, and Exercise Show pages that show up when the user's mouse hovers over.  
+        Image Animation: High Resolution photo a description of the site that shows up when the user's mouse hovers over. Optional 'Wagner Mode' that plays the 'Ride of the Valkyries' along with a small animation. 
 - Food: 
-        Slide Show menu of flipcards with flip card animations overlayed over a photo. 
+       Flipcards with flip card animations overlayed over a photo. 
 - Climate and Exercise Show Page: 
         Expandable middle menu, when you click on a menu item you see Nietzsche's quote on the right. 
 - Drinks Show Page: 
-        Scrollable list of quotes placed next to images which transition from black and white to color when the user's mouse hovers over 
+        Slideshow of quotes placed next to images which transition from black and white to color when the user's mouse hovers over 
 
 
 **Wireframes** 
