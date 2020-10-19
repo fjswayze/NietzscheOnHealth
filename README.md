@@ -2,7 +2,7 @@
 
 **Background and Overview** 
 
-   This website will present Fredrich Nietzsche's (very funny) views on nutrition, climate, and exercise from his book *Ecco Homo* in a visually compelling way. The site is primarily designed to be a CSS showcase. 
+   Nietzsche On Health presents Fredrich Nietzsche's (very funny) views on nutrition, climate, and exercise from his book *Ecco Homo* in a visually compelling way. The site is primarily designed to be a CSS showcase. 
    
 **Functionality and MVPs** 
 
@@ -20,27 +20,9 @@ In addition, this project will include the following features:
         Slideshow of quotes placed next to images which transition from black and white to color when the user's mouse hovers over 
 
 
-**Wireframes** 
-
-[Splash Page](https://wireframe.cc/UBFcud)
-
-[Food and Drink](https://wireframe.cc/4TNpQW) 
-
-[Climate](https://wireframe.cc/a6pUuT) 
-
-[Exercise](https://wireframe.cc/GqATe9) 
-
-
 
 **Architecture and Technology** 
 
-The website will be built with Javascript, HTML, and CSS. 
+The website will is built with Javascript, HTML, and CSS. 
 
-**Implementation Timeline** 
-Day 1: Splash Page 
 
-Day 2: Food and Drink Show Page 
-
-Day 3: Climate Show Page 
-
-Day 4: Exersize Show Page 
