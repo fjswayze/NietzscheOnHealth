@@ -1,28 +1,27 @@
+
 # NietzscheOnHealth
 
-**Background and Overview** 
+   Nietzsche On Health presents Fredrich Nietzsche's strange views on nutrition, climate, and exercise from his book *Ecco Homo* in a visually compelling way. The site is a CSS showcase. 
 
-   Nietzsche On Health presents Fredrich Nietzsche's (very funny) views on nutrition, climate, and exercise from his book *Ecco Homo* in a visually compelling way. The site is primarily designed to be a CSS showcase. 
-   
-**Functionality and MVPs** 
+# Technologies Used
 
-In Health With Nietzsche, users can learn about the great 19th Century Philosopher's views on what to eat, what to drink, and how to exercise. 
+Nietzsche On Health is a pure frontend application and uses JavaScript, HTML5, and CSS. 
 
-In addition, this project will include the following features: 
+# Wagner Mode 
+Users can click a small icon of Richar Wagner to enter 'Wagner Mode.'  Wagner's famous song, 'Ride of the Valkyries,' plays and Valkyries appear. (Wagner was Nietzsche's favorite composer.) 
 
-- Splash Page: 
-        Image Animation: High Resolution photo a description of the site that shows up when the user's mouse hovers over. Optional 'Wagner Mode' that plays the 'Ride of the Valkyries' along with a small animation. 
-- Food: 
-       Flipcards with flip card animations overlayed over a photo. 
-- Climate and Exercise Show Page: 
-        Expandable middle menu, when you click on a menu item you see Nietzsche's quote on the right. 
-- Drinks Show Page: 
-        Slideshow of quotes placed next to images which transition from black and white to color when the user's mouse hovers over 
+![wagner](https://media.giphy.com/media/wqL5FaH1H4RvJX0Tlc/giphy.gif)
 
 
+# Flip Cards 
 
-**Architecture and Technology** 
+To see Nietzsche's views on food, users hover over a flip card. 
 
-The website will is built with Javascript, HTML, and CSS. 
+![flip cards](https://media.giphy.com/media/pkUXwMxX2j3qzLyew8/giphy.gif)
 
 
+# Expandable Menu 
+![menu](https://media.giphy.com/media/I0696Yve4LoYNtLnli/giphy.gif)
+
+# Quiz Results
+![quiz](https://media.giphy.com/media/lDSrmeYof6JkyiKJSV/giphy.gif)
