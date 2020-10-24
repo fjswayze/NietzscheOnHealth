@@ -576,6 +576,9 @@ background-color: #ffffff6e;
 
 /* QUIZ */
 
+.quiz-title{
+    padding: 10px;
+}
 
 .questions  {
     background-image: url('../images/quiz-background.jpg');
@@ -636,7 +639,7 @@ background-color: #ffffff6e;
      margin-top: 30px;
      margin-bottom: 30px;
    
-    background-color: #ffffff96; 
+    background-color: #ffffffdb;
     border-radius: 3px;
     width: 100%;
 }
