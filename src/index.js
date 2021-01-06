@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let drinksTitle = 'Drinks'; 
     let speed  = 300; 
 
-    typeOut(); 
+    // typeOut(); 
 
     function typeOut(){
         if(i <= drinksTitle.length){

@@ -222,7 +222,7 @@ audio {
     z-index: 1;
 } 
 
-.food-title {
+/* .food-title {
     animation-duration: 5s;
     animation-name: colorshift;
     animation-direction: alternate;
@@ -238,7 +238,7 @@ audio {
     to {
         color: #f5f2f2;
     }
-}
+} */
 
 
 
@@ -350,13 +350,13 @@ audio {
 }
 .climate-exercise h1{
     padding-left: 20px;
-    animation-duration: 10s;
+    /* animation-duration: 10s;
     animation-name: slidein;
     animation-iteration-count: infinite;
-    animation-direction: alternate; 
+    animation-direction: alternate;  */
 }
 
-@keyframes slidein {
+/* @keyframes slidein {
     from {
         margin-left: 0%;
     }
@@ -364,7 +364,7 @@ audio {
     to {
         margin-left: 70%;
     }
-}
+} */
 
 
 .climate-exercise img{
