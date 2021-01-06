@@ -95,34 +95,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let drinksTitle = 'Drinks'; 
     let speed  = 300; 
 
-    // typeOut(); 
+   
 
-    function typeOut(){
-        if(i <= drinksTitle.length){
-            document.getElementById('drinks-title').innerHTML = drinksTitle.slice(0, i); 
-            i++; 
-            if(i <= drinksTitle.length) setTimeout(typeOut, speed); 
-        }
-        if(i === drinksTitle.length + 1){
-            j = 6; 
-            setTimeout(typeDown, 2000)
-        }
-    }
-
-    function typeDown(){
-        if(j >= 0){
-            document.getElementById('drinks-title').innerHTML = drinksTitle.slice(0, j); 
-            j--; 
-            if(j >= 0) setTimeout(typeDown, speed); 
-        }
-
-        if(j === -1){
-            i = 1; 
-            setTimeout(typeOut, 1000);  
-        }
-
-
-    }
+    
 
 
     
