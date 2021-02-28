@@ -13,6 +13,10 @@ body{
         display: none;
     }
 
+    .food-title{
+        padding-left: 20px;
+    }
+
     .food{
     display: none;
     position: relative;
@@ -650,6 +654,7 @@ audio {
 
 .questions  {
     background-image: url('../images/quiz-background.jpg');
+    background-position: center;
     height: 600px;
     width: 100%;
     color: white;
